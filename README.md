@@ -1,1 +1,2 @@
 # React-Modal
+INFO AVAILABLE SOON
