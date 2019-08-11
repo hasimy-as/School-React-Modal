@@ -6,7 +6,7 @@ import Header from './Header';
 class App extends Component {
   constructor() {
     super();
-    this.state = { ff: [], modalOpened: false, modalData: [], key: [] };
+    this.state = { yalli: [], modalOpened: false, modalData: [], key: [] };
 
     this.openModal = this.openModal.bind(this);
     this.afterOpened = this.afterOpened.bind(this);
@@ -19,15 +19,15 @@ class App extends Component {
     let hour = this.refs.hour.value;
     let act = this.refs.act.value;
 
-    this.state.ff.push({ hour, act });
-    this.setState({ ff: this.state.ff });
+    this.state.yalli.push({ hour, act });
+    this.setState({ yalli: this.state.yalli });
 
     this.refs.form.reset();
   };
 
   removeData = i => {
-    this.state.ff.splice(i, 1);
-    this.setState({ ff: this.state.ff });
+    this.state.yalli.splice(i, 1);
+    this.setState({ yalli: this.state.yalli });
   };
 
   openModal(data, i) {
@@ -54,8 +54,8 @@ class App extends Component {
     let hour = this.refs.hour_edit.value;
     let act = this.refs.activity_edit.value;
     let key = this.state.key;
-    this.state.ff.splice(key, 1, { hour, act });
-    this.setState({ ff: this.state.ff, modalData: [] });
+    this.state.yalli.splice(key, 1, { hour, act });
+    this.setState({ yalli: this.state.yalli, modalData: [] });
     this.setState({ modalOpened: false });
   };
 
@@ -65,7 +65,7 @@ class App extends Component {
         <div style={{ marginTop: 27 + 'px' }} className='App'>
           <Header />
         </div>
-        <div className='col-md-4 offset-4'>
+        <div className='col-md-4 oyalliset-4'>
           <form ref='form' className='form-horizontal'>
             <div className='form-group mx-sm-3 mb-2'>
               <input
@@ -96,9 +96,9 @@ class App extends Component {
           </form>
         </div>
         <hr />
-        <div className='col-md-4 offset-5'>
+        <div className='col-md-4 oyalliset-5'>
           <ul className='list-group'>
-            {this.state.ff.map((data, i) => (
+            {this.state.yalli.map((data, i) => (
               <li className='list-item' key={i}>
                 <div className='ml-2'>
                   {data.hour} == {data.act}
@@ -151,7 +151,7 @@ class App extends Component {
                 className='form-control'
               />
             </div>
-            <div className='row offset-2'>
+            <div className='row oyalliset-2'>
               <button onClick={this.saveData} className='btn btn-info btn-flat'>
                 Save
               </button>
