@@ -1,32 +1,25 @@
 # React-Modal
 
-React-Modal adalah aplikasi web untuk lapor aktivitas harian dengan React.js
+Just schoolwork. Used for practicing making a website for reporting daily activities with React.js.
 
-# Status Projek
+# Project Status
 
-[![Lisensi GitHub](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/hasimy-as/React-Modal/master/LICENSE)
-[![Versi npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/hasimy-as/React-Modal/master/LICENSE)
+[![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/)
 
-## Versi 1.0.0
 
-Versi tetap.
-
-# Penggunaan
-
-Ikuti instruksi dibawah untuk membuat aplikasi bekerja:
+# Usage
 
 ```sh
-Pertama, unduh atau klon aplikasi di <repository> ini.
+First, download/clone the repo.
 
-Kedua, silahkan unduh <dependencies> yang diperlukan aplikasi dengan perintah (npm install --save) di CLI anda.
+Secondly, install the dependency with yarn or npm install.
 
-Ketiga, ketik perintah (npm start/yarn start) untuk menginisialisasi aplikasi.
+Thirdly, run the app via yarn or npm start.
 
 ```
 
-## Dilisensikan di bawah Lisensi [MIT](https://raw.githubusercontent.com/hasimy-as/React-Modal/master/LICENSE)
-
-### [README React.js](https://raw.githubusercontent.com/hasimy-as/React-Modal/master/ReactREADME.md)
+## Licensed under [MIT](https://raw.githubusercontent.com/hasimy-as/React-Modal/master/LICENSE)
 
 Happy coding!
 ~Hasimy
